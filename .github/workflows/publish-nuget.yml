@@ -26,7 +26,7 @@ jobs:
       run: dotnet restore SharedContracts/SharedContracts/PureDelivery.Shared.Contracts.csproj
       
     - name: Build
-      run: dotnet restore SharedContracts/SharedContracts/PureDelivery.Shared.Contracts.csproj --configuration Release --no-restore
+      run: dotnet build SharedContracts/SharedContracts/PureDelivery.Shared.Contracts.csproj --configuration Release --no-restore
       
     - name: Test
       run: dotnet test --configuration Release --no-build --verbosity normal
@@ -47,7 +47,7 @@ jobs:
       run: dotnet restore SharedContracts/SharedContracts/PureDelivery.Shared.Contracts.csproj
       
     - name: Build
-      run: dotnet restore SharedContracts/SharedContracts/PureDelivery.Shared.Contracts.csproj --configuration Release --no-restore
+      run: dotnet build SharedContracts/SharedContracts/PureDelivery.Shared.Contracts.csproj --configuration Release --no-restore
       
     - name: Create NuGet package
       run: dotnet pack SharedContracts/SharedContracts/PureDelivery.Shared.Contracts.csproj --configuration Release --no-build --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
