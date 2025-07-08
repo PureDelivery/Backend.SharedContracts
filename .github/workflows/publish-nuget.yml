@@ -3,24 +3,24 @@ name: Publish NuGet Package
 on:
   push:
     branches: [ main ]
-    tags: [ 'v*' ]
-  pull_request:
-    branches: [ main ]
 
 env:
   PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}/output
-  NUGET_SOURCE_URL: 'https://nuget.pkg.github.com/pure-delivery-org/index.json'
+  NUGET_SOURCE_URL: 'https://nuget.pkg.github.com/PureDelivery/index.json'
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
     - uses: actions/checkout@v4
     
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 9.0.x
+        dotnet-version: 8.0.x
         
     - name: Restore dependencies
       run: dotnet restore SharedContracts/SharedContracts/PureDelivery.Shared.Contracts.csproj
@@ -31,6 +31,9 @@ jobs:
     - name: Create NuGet package
       run: dotnet pack SharedContracts/SharedContracts/PureDelivery.Shared.Contracts.csproj --configuration Release --no-build --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
       
+    - name: Setup NuGet source
+      run: |
+        dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
+      
     - name: Publish to GitHub Packages
-      if: github.ref == 'refs/heads/main'
-      run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}/*.nupkg --source ${{ env.NUGET_SOURCE_URL }} --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
+      run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}/*.nupkg --source "github" --skip-duplicate
