@@ -25,7 +25,4 @@
     <Folder Include="Events\Payments\" />
     <Folder Include="Events\Users\" />
   </ItemGroup>
-	<ItemGroup>
-		<None Include="..\README.md" Pack="true" PackagePath="\" />
-	</ItemGroup>
 </Project>
