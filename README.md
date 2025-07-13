@@ -1,6 +1,9 @@
 # Backend.SharedContracts
 📚 Shared contracts, DTOs, events, and interfaces for Pure Delivery microservices. Published as NuGet package to GitHub Packages for cross-service communication and data consistency.
 
+[1.6.0] [13.07.2025]
+- Identity DTOs added
+
 [1.5.1] [13.07.2025]
 - ISessionService fix return value
 
