@@ -9,8 +9,14 @@ namespace PureDelivery.Shared.Contracts.Common.Services
     {
         Task<SessionDto?> GetSessionAsync(string sessionId);
         Task<SessionDto> CreateSessionAsync(string userId);
-        Task<string> AddCustomerSessionDataAsync(string sessionId, CustomerSessionDto customerData);
-        Task<string> UpdateCustomerDataAsync(string sessionId, CustomerSessionDto customerData);
+        Task<SessionDto> AddCustomerSessionDataAsync(string sessionId, CustomerSessionDto customerData);
+        Task<SessionDto> UpdateCustomerDataAsync(string sessionId, CustomerSessionDto customerData);
         Task<bool> SaveSessionAsync(SessionDto session);
+
+        Task<SessionDto?> GetUserActiveSessionAsync(string userId);
+        Task<bool> DeleteAllUserSessionsAsync(string userId);
+        Task<bool> DeleteSessionAsync(string sessionId);
+        Task<bool> IsSessionValidAsync(string sessionId);
+        Task<SessionDto> CreateSessionWithDataAsync(string userId, CustomerSessionDto customerData);
     }
 }
