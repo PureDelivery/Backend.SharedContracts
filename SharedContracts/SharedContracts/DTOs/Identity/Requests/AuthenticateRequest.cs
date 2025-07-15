@@ -15,5 +15,8 @@ namespace PureDelivery.Shared.Contracts.DTOs.Identity.Requests
 
         [Required(ErrorMessage = "Password is required")]
         public string Password { get; set; } = string.Empty;
+
+        public string UserAgent { get; set; } = string.Empty;
+        public string UserIP { get; set; } = string.Empty;
     }
 }
