@@ -1,8 +1,18 @@
 # Backend.SharedContracts
 📚 Shared contracts, DTOs, events, and interfaces for Pure Delivery microservices. Published as NuGet package to GitHub Packages for cross-service communication and data consistency.
 
-[1.7.2] [15.07.2025]
-- Added SessionValidationResult and added extra props in Authenticate request for session validation flows
+[1.7.6] [24.07.2025]
+- Added Identity request models: CreateAddressRequest, UpdateAddressRequest, UpdateProfileRequest
+- Added DataAnnotations validation attributes for all request models
+
+[1.7.5] [15.07.2025]
+- ISessionService: add param AuthRequest to ISessionService create with add customer info to store session security info
+
+[1.7.4] [15.07.2025]
+- ISessionService: return type of Validation method changed
+
+[1.7.3] [15.07.2025]
+- ISessionService: changed validation method params
 
 [1.7.0] [15.07.2025]
 - ISessionService extend

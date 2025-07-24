@@ -1,4 +1,5 @@
 ﻿using PureDelivery.Shared.Contracts.Domain.Enums;
+using PureDelivery.Shared.Contracts.DTOs.Identity.Requests;
 using PureDelivery.Shared.Contracts.DTOs.Session;
 using PureDelivery.Shared.Contracts.DTOs.SessionDTO;
 using SessionDto = PureDelivery.Shared.Contracts.DTOs.SessionDTO.SessionDto;
@@ -16,7 +17,7 @@ namespace PureDelivery.Shared.Contracts.Common.Services
         Task<SessionDto?> GetUserActiveSessionAsync(string userId);
         Task<bool> DeleteAllUserSessionsAsync(string userId);
         Task<bool> DeleteSessionAsync(string sessionId);
-        Task<bool> IsSessionValidAsync(string sessionId);
-        Task<SessionDto> CreateSessionWithDataAsync(string userId, CustomerSessionDto customerData);
+        Task<SessionValidationResult> IsSessionValidAsync(string sessionId, string userIP, string userAgent);
+        Task<SessionDto> CreateSessionWithDataAsync(string userId, CustomerSessionDto customerData, AuthenticateRequest authenticateRequest);
     }
 }
