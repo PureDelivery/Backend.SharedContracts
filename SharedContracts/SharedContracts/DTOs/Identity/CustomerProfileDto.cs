@@ -17,5 +17,9 @@ namespace PureDelivery.Shared.Contracts.DTOs.Identity
         public string? PreferredPaymentMethod { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+        public string? AvatarUrl { get; set; }
+
+        public decimal UserGrade { get; set; } = 0.0m;
+        public int TotalRatings { get; set; } = 0;
     }
 }

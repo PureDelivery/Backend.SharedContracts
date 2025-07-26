@@ -1,6 +1,9 @@
 # Backend.SharedContracts
 📚 Shared contracts, DTOs, events, and interfaces for Pure Delivery microservices. Published as NuGet package to GitHub Packages for cross-service communication and data consistency.
 
+[1.8.1] 
+- CustomerProfileDto to support Avatar and User grade data
+
 [1.8.0] 
 - Remove PaymentMethod field from CreateCustomerRequest
 
