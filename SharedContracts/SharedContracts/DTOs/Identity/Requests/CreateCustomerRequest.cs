@@ -30,8 +30,5 @@ namespace PureDelivery.Shared.Contracts.DTOs.Identity.Requests
         public string? Phone { get; set; }
 
         public DateTime? DateOfBirth { get; set; }
-
-        [MaxLength(50, ErrorMessage = "Preferred payment method cannot exceed 50 characters")]
-        public string? PreferredPaymentMethod { get; set; }
     }
 }
