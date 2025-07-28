@@ -1,6 +1,9 @@
 # Backend.SharedContracts
 📚 Shared contracts, DTOs, events, and interfaces for Pure Delivery microservices. Published as NuGet package to GitHub Packages for cross-service communication and data consistency.
 
+[1.8.2] [28.07.2025]
+- CreateAddressRequest added IsDefault property
+
 [1.8.1] 
 - CustomerProfileDto to support Avatar and User grade data
 

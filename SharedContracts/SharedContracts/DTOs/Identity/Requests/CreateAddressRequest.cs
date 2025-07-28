@@ -42,5 +42,8 @@ namespace PureDelivery.Shared.Contracts.DTOs.Identity.Requests
 
         [Range(-180, 180, ErrorMessage = "Longitude must be between -180 and 180")]
         public decimal? Longitude { get; set; }
+
+        [Required(ErrorMessage = "IsDefault is required")]
+        public bool IsDefault { get; set; }
     }
 }
