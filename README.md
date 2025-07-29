@@ -1,6 +1,9 @@
 # Backend.SharedContracts
 📚 Shared contracts, DTOs, events, and interfaces for Pure Delivery microservices. Published as NuGet package to GitHub Packages for cross-service communication and data consistency.
 
+[1.8.3] [29.07.2025]
+- Change pasword functionality extended, thus, new models created: PasswordChangeRequest and ChangePasswordWithOtpRequest
+
 [1.8.2] [28.07.2025]
 - CreateAddressRequest added IsDefault property
 
