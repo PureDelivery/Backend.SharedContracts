@@ -9,9 +9,15 @@ namespace PureDelivery.Shared.Contracts.DTOs.Identity
     public class CustomerSummaryDto
     {
         public Guid Id { get; set; }
-        public string Email { get; set; } = string.Empty;
-        public string FullName { get; set; } = string.Empty;
-        public bool IsActive { get; set; }
-        public DateTime CreatedAt { get; set; }
+
+        public decimal LoyaltyPoints { get; set; }
+
+        public decimal UserGrade { get; set; }
+
+        public int TotalRatings { get; set; }
+
+        public string FullName { get; set; }
+
+        public string AvatarUrl { get; set; }
     }
 }
