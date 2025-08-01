@@ -1,6 +1,13 @@
 # Backend.SharedContracts
 📚 Shared contracts, DTOs, events, and interfaces for Pure Delivery microservices. Published as NuGet package to GitHub Packages for cross-service communication and data consistency.
 
+[2.0.0] [01.08.2025]
+- Added Restaurant Service DTOs and request models
+- Added PagedResult<T> model for pagination support
+- Added restaurant filtering and search request models
+- Added menu item and nutrition DTOs with options support
+- Added cuisine type and restaurant tag filtering models
+
 [1.9.0] [30.07.2025]
 - Added new models for separated profile dtos, changed summary dto
 
