@@ -24,7 +24,7 @@ namespace PureDelivery.Shared.Contracts.DTOs.Restaurants.Responses
         public decimal MinOrderAmount { get; set; }
         public bool IsFeatured { get; set; }
         public bool ParticipatesInLoyalty { get; set; }
-        public string Latitude { get; set; }
-        public string Longitude { get; set; }
+        public decimal Latitude { get; set; }
+        public decimal Longitude { get; set; }
     }
 }
