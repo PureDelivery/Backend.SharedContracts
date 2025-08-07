@@ -9,6 +9,8 @@ namespace PureDelivery.Shared.Contracts.DTOs.Location.Requests
     public class RestaurantLocationData
     {
         public Guid RestaurantId { get; set; }
+        public decimal Latitude { get; set; }
+        public decimal Longitude { get; set; }
         public List<DeliveryZoneData> DeliveryZones { get; set; } = new();
     }
 
