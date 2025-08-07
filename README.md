@@ -1,6 +1,9 @@
 # Backend.SharedContracts
 📚 Shared contracts, DTOs, events, and interfaces for Pure Delivery microservices. Published as NuGet package to GitHub Packages for cross-service communication and data consistency.
 
+[2.0.2] [07.08.2025]
+- Added Longitude Latitude fields to RestaurantDto model
+
 [2.0.1] [03.08.2025]
 - Removed old filter models and added model for joined restaurant filtering
 
