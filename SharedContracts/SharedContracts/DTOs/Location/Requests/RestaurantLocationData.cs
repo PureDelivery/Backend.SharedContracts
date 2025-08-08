@@ -18,6 +18,13 @@ namespace PureDelivery.Shared.Contracts.DTOs.Location.Requests
     {
         public Guid ZoneId { get; set; }
         public bool IsActive { get; set; }
+        public string Name { get; set; } = string.Empty;
+
+        public decimal DeliveryFee { get; set; }
+        public decimal MinOrderAmount { get; set; }
+        public int EstimatedDeliveryMinutes { get; set; }
+
+        public int Priority { get; set; }
         public List<ZonePointData> Points { get; set; } = new();
     }
 

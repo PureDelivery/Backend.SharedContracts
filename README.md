@@ -1,9 +1,12 @@
 # Backend.SharedContracts
 📚 Shared contracts, DTOs, events, and interfaces for Pure Delivery microservices. Published as NuGet package to GitHub Packages for cross-service communication and data consistency.
 
+[3.0.2] [09.08.2025]
+- Delivery zone data request extended
+
 [3.0.1] [07.08.2025]
 - Coordinates fields added to restaurant
-- 
+
 [3.0.0] [07.08.2025]
 - Added models for location service
 
