@@ -7,7 +7,7 @@
 	
 	<!-- NuGet Package Configuration -->
 	<PackageId>PureDelivery.Shared.Contracts</PackageId>
-    <Version>3.0.2</Version>
+    <Version>3.0.3</Version>
     <Authors>Pure Delivery Team</Authors>
     <Description>Shared contracts, DTOs, events for Pure Delivery microservices</Description>
     <PackageTags>microservices;contracts;dtos;events;food-delivery</PackageTags>

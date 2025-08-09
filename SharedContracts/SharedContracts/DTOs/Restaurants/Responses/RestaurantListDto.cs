@@ -16,6 +16,7 @@ namespace PureDelivery.Shared.Contracts.DTOs.Restaurants.Responses
         public List<string> Tags { get; set; }
 
         public decimal Distance { get; set; }
+        public int EstimatedDeliveryMinutes { get; set; }
 
         public decimal AverageRating { get; set; }
         public int ReviewCount { get; set; }
