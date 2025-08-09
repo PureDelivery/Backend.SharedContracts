@@ -20,7 +20,7 @@ namespace PureDelivery.Shared.Contracts.DTOs.Restaurants.Responses
         public decimal AverageRating { get; set; }
         public int ReviewCount { get; set; }
 
-        public int EstimatedDeliveryMinutes { get; set; }
+        public EstimatedDelivery EstimatedDelivery { get; set; }
         public decimal DeliveryFee { get; set; }
         public decimal MinOrderAmount { get; set; }
         public bool IsOpen { get; set; }
