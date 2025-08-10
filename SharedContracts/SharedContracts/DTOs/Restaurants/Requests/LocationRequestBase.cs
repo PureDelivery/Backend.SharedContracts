@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace PureDelivery.Shared.Contracts.DTOs.Restaurants.Requests
 {
-    public class SearchRestaurantRequest : LocationRequestBase
+    public class LocationRequestBase
     {
         [Required]
-        [MinLength(2)]
-        public string Query { get; set; } = string.Empty;
+        [Range(-90, 90)]
+        public decimal Latitude { get; set; }
 
-        public int Page { get; set; } = 1;
-
-        public int PageSize { get; set; } = 20;
+        [Required]
+        [Range(-180, 180)]
+        public decimal Longitude { get; set; }
     }
 }
