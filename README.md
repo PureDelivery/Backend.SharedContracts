@@ -1,6 +1,9 @@
 # Backend.SharedContracts
 📚 Shared contracts, DTOs, events, and interfaces for Pure Delivery microservices. Published as NuGet package to GitHub Packages for cross-service communication and data consistency.
 
+[3.0.6] [11.08.2025]
+- Created SearchDishInRestaurantRequest to separate two different flows
+
 [3.0.5] [11.08.2025]
 - Restaurant requests to have shared LocationRequestBase
 
