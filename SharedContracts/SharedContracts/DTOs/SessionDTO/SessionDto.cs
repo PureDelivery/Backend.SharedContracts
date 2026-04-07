@@ -12,6 +12,7 @@ namespace PureDelivery.Shared.Contracts.DTOs.SessionDTO
         public string SessionId { get; set; } = string.Empty;
         public string UserId { get; set; } = string.Empty;
         public CustomerSessionDto? CustomerSessionDto { get; set; }
+        public Dictionary<string, OrderStateDto> OrderStates { get; set; } = new();
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime LastAccessedAt { get; set; } = DateTime.UtcNow;

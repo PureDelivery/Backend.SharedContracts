@@ -1,10 +1,10 @@
-﻿namespace PureDelivery.Shared.Contracts.DTOs.Session;
+﻿using PureDelivery.Shared.Contracts.DTOs.SessionDTO;
+
+namespace PureDelivery.Shared.Contracts.DTOs.Session;
 
 public class DeliveryInfoDto
 {
-    public string Address { get; set; } = string.Empty;
-
-    public LocationDto Coordinates { get; set; } = new();
+    public CustomerAddressSessionDto DeliveryAddress { get; set; }
 
     public string ContactName { get; set; } = string.Empty;
 
