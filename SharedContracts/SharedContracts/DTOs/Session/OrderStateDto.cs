@@ -4,7 +4,7 @@ namespace PureDelivery.Shared.Contracts.DTOs.Session;
 
 public class OrderStateDto
 {
-    public RestaurantSessionDto? Restaurant { get; set; }
+    public string? RestaurantId { get; set; }
 
     public List<OrderItemSessionDto> Items { get; set; } = new();
 
