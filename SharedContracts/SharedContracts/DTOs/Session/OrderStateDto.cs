@@ -6,6 +6,9 @@ public class OrderStateDto
 {
     public string? RestaurantId { get; set; }
 
+    /// <summary>Denormalized restaurant name — stored so the cart can display it without extra lookups</summary>
+    public string? RestaurantName { get; set; }
+
     public List<OrderItemSessionDto> Items { get; set; } = new();
 
     public DeliveryInfoDto? Delivery { get; set; }
