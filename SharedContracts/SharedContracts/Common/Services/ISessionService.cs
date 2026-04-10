@@ -18,6 +18,6 @@ namespace PureDelivery.Shared.Contracts.Common.Services
         Task<bool> DeleteAllUserSessionsAsync(string userId);
         Task<bool> DeleteSessionAsync(string sessionId);
         Task<SessionValidationResult> IsSessionValidAsync(string sessionId, string userIP, string userAgent);
-        Task<SessionDto> CreateSessionWithDataAsync(string userId, CustomerSessionDto customerData, AuthenticateRequest authenticateRequest);
+        Task<SessionDto> CreateSessionWithDataAsync(string userId, CustomerSessionDto? customerData, AuthenticateRequest authenticateRequest, UserRole role = UserRole.Customer);
     }
 }

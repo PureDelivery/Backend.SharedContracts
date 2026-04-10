@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PureDelivery.Shared.Contracts.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace PureDelivery.Shared.Contracts.DTOs.Identity
         public string FullName { get; set; } = string.Empty;
         public string SessionId { get; set; } = string.Empty;
         public DateTime AuthenticatedAt { get; set; } = DateTime.UtcNow;
+        public UserRole Role { get; set; } = UserRole.Customer;
         public CustomerProfileDto? Profile { get; set; }
     }
 }

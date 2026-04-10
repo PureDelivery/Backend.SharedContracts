@@ -1,4 +1,5 @@
-﻿using PureDelivery.Shared.Contracts.DTOs.Session;
+﻿using PureDelivery.Shared.Contracts.Domain.Enums;
+using PureDelivery.Shared.Contracts.DTOs.Session;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace PureDelivery.Shared.Contracts.DTOs.SessionDTO
     {
         public string SessionId { get; set; } = string.Empty;
         public string UserId { get; set; } = string.Empty;
+        public UserRole Role { get; set; } = UserRole.Customer;
         public CustomerSessionDto? CustomerSessionDto { get; set; }
         public Dictionary<string, OrderStateDto> OrderStates { get; set; } = new();
 
