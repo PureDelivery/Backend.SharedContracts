@@ -21,4 +21,8 @@ public class OrderAvailableEvent
 
     public string CustomerName { get; set; } = string.Empty;
     public DateTime CreatedAt { get; set; }
+
+    // Populated by CourierService after geo-filtering via LocationService.
+    // NotificationService sends only to these couriers.
+    public List<string> TargetCourierUserIds { get; set; } = [];
 }
