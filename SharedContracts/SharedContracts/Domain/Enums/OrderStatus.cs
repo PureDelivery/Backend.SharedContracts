@@ -7,7 +7,8 @@ public enum OrderStatus
     Payment = 2,
     Confirmed = 3,
     InPreparation = 4,
-    Delivery = 5,
-    Completed = 6,
-    Cancelled = 7
+    ReadyForPickup = 5,
+    Delivery = 6,
+    Completed = 7,
+    Cancelled = 8
 }
