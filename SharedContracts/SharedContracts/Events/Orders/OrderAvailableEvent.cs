@@ -16,6 +16,8 @@ public class OrderAvailableEvent
 
     public decimal RestaurantLatitude { get; set; }
     public decimal RestaurantLongitude { get; set; }
+    public string RestaurantAddress { get; set; } = string.Empty;
+    public string RestaurantCity { get; set; } = string.Empty;
 
     public decimal DeliveryFee { get; set; }
     public decimal TotalAmount { get; set; }

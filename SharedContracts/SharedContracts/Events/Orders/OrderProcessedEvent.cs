@@ -26,6 +26,8 @@ public class OrderProcessedEvent
 
     public decimal RestaurantLatitude { get; set; }
     public decimal RestaurantLongitude { get; set; }
+    public string RestaurantAddress { get; set; } = string.Empty;
+    public string RestaurantCity { get; set; } = string.Empty;
 
     public DateTime CreatedAt { get; set; }
 }
