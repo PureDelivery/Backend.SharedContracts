@@ -6,6 +6,7 @@ namespace PureDelivery.Shared.Contracts.Events.Orders;
 public class OrderProcessedEvent
 {
     public string OrderId { get; set; } = string.Empty;
+    public string OrderNumber { get; set; } = string.Empty;
     public string SessionId { get; set; } = string.Empty;
 
     public string CustomerId { get; set; } = string.Empty;

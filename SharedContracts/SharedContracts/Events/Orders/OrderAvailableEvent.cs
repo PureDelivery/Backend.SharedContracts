@@ -5,6 +5,7 @@ namespace PureDelivery.Shared.Contracts.Events.Orders;
 public class OrderAvailableEvent
 {
     public Guid OrderId { get; set; }
+    public string OrderNumber { get; set; } = string.Empty;
     public Guid RestaurantId { get; set; }
     public string RestaurantName { get; set; } = string.Empty;
 
