@@ -43,8 +43,8 @@ namespace PureDelivery.Shared.Contracts.DTOs.Restaurants.Responses
     {
         public string FullAddress { get; set; } = string.Empty;
         public string City { get; set; } = string.Empty;
-        public decimal Latitude { get; set; }
-        public decimal Longitude { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
     }
 
     public class RestaurantSettingsDto
