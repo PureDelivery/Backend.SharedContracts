@@ -22,5 +22,6 @@ namespace PureDelivery.Shared.Contracts.Events.Restaurant
         public int DietaryTags { get; set; }
         public bool IsPopular { get; set; }
         public bool IsRecommended { get; set; }
+        public decimal Price { get; set; }
     }
 }

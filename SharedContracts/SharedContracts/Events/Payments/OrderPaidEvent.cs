@@ -26,4 +26,10 @@ public class OrderPaidEvent
 
     /// <summary>UTC timestamp of payment completion</summary>
     public DateTime PaidAt { get; set; } = DateTime.UtcNow;
+
+    /// <summary>Pre-generated Order ID — OrderService must use this as the order's primary key.</summary>
+    public Guid OrderId { get; set; }
+
+    /// <summary>Amount paid via loyalty points (0 if no loyalty payment).</summary>
+    public decimal LoyaltyPointsUsed { get; set; }
 }

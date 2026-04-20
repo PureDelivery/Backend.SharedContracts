@@ -26,6 +26,7 @@ namespace PureDelivery.Shared.Contracts.DTOs.Restaurants.Responses
         public bool IsOpen { get; set; }
         public bool IsFeatured { get; set; }
         public bool ParticipatesInLoyalty { get; set; }
+        public decimal LoyaltyPointsRate { get; set; }
         public RestaurantAddressDto Address { get; set; } = new();
         public RestaurantSettingsDto Settings { get; set; } = new();
         public List<WorkingHoursDto> WorkingHours { get; set; } = new();
