@@ -4,17 +4,17 @@ namespace PureDelivery.Shared.Contracts.DTOs.Location.Requests;
 
 public class CouriersInRangeRequest
 {
-    public decimal RestaurantLatitude { get; set; }
-    public decimal RestaurantLongitude { get; set; }
-    public decimal DeliveryLatitude { get; set; }
-    public decimal DeliveryLongitude { get; set; }
+    public double RestaurantLatitude { get; set; }
+    public double RestaurantLongitude { get; set; }
+    public double DeliveryLatitude { get; set; }
+    public double DeliveryLongitude { get; set; }
     public List<CourierLocationData> Couriers { get; set; } = [];
 }
 
 public class CourierLocationData
 {
     public string CourierUserId { get; set; } = string.Empty;
-    public decimal Latitude { get; set; }
-    public decimal Longitude { get; set; }
+    public double Latitude { get; set; }
+    public double Longitude { get; set; }
     public VehicleType VehicleType { get; set; }
 }

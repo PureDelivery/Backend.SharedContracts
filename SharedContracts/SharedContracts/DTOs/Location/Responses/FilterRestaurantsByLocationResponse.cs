@@ -15,7 +15,7 @@ namespace PureDelivery.Shared.Contracts.DTOs.Location.Responses
     public class DeliverableRestaurant
     {
         public Guid RestaurantId { get; set; }
-        public decimal Distance { get; set; }
+        public double Distance { get; set; }
         public DeliveryZoneMatch BestDeliveryZone { get; set; } = null!;
     }
 

@@ -11,11 +11,11 @@ namespace PureDelivery.Shared.Contracts.DTOs.Location.Requests
     {
         [Required]
         [Range(-90, 90)]
-        public decimal UserLatitude { get; set; }
+        public double UserLatitude { get; set; }
 
         [Required]
         [Range(-180, 180)]
-        public decimal UserLongitude { get; set; }
+        public double UserLongitude { get; set; }
 
         [Required]
         public List<RestaurantLocationData> Restaurants { get; set; } = new();
