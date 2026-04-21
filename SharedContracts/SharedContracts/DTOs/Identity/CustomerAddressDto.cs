@@ -13,8 +13,8 @@ namespace PureDelivery.Shared.Contracts.DTOs.Identity
         public string FullAddress { get; set; } = string.Empty;
         public string City { get; set; } = string.Empty;
         public string PostalCode { get; set; } = string.Empty;
-        public decimal? Latitude { get; set; }
-        public decimal? Longitude { get; set; }
+        public double? Latitude { get; set; }
+        public double? Longitude { get; set; }
         public string Building { get; set; } = string.Empty;
         public string Apartment { get; set; } = string.Empty;
         public string Floor { get; set; } = string.Empty;
