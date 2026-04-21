@@ -1,3 +1,5 @@
+using PureDelivery.Shared.Contracts.Domain.Enums;
+
 namespace PureDelivery.Shared.Contracts.Events.Payments;
 
 /// <summary>
@@ -21,8 +23,7 @@ public class OrderPaidEvent
     /// <summary>Total amount charged</summary>
     public decimal Amount { get; set; }
 
-    /// <summary>0=CreditCard,1=DebitCard,2=PayPal,3=ApplePay,4=GooglePay,5=Cash,6=BankTransfer</summary>
-    public int PaymentMethod { get; set; }
+    public PaymentMethod PaymentMethod { get; set; }
 
     /// <summary>UTC timestamp of payment completion</summary>
     public DateTime PaidAt { get; set; } = DateTime.UtcNow;
