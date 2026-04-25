@@ -11,6 +11,7 @@ public class OrderInDeliveryEvent
 {
     public string OrderId { get; set; } = string.Empty;
 
+    public string CourierId      { get; set; } = string.Empty;
     public string CourierUserId  { get; set; } = string.Empty;
     public string CourierFirstName { get; set; } = string.Empty;
     public string CourierLastName  { get; set; } = string.Empty;
